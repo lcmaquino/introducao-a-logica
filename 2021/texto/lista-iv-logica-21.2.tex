@@ -1,0 +1,94 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Introdução à Lógica \quad Semestre: 2021/2\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista IV}
+\end{center}
+
+\begin{enumerate}
+  \item Monte a tabela verdade para verificar se cada argumento abaixo é válido ou inválido.
+  \begin{enumerate}
+    \item $p\to q,\, r\to \lnot q \vdash r \to \lnot p$
+    \item $p \wedge \lnot q,\, \lnot r \to q \vdash p\wedge r$
+    \item $p\to \lnot q,\, p,\, q\to r \vdash \lnot r$
+    \item $p\vee \lnot q,\, \lnot p,\, \lnot (p\wedge r)\to q \vdash r$
+  \end{enumerate}
+  
+  \item Passe cada argumento abaixo para a forma simbólica e verifique a sua validade.
+
+    \begin{tabular}{ll}
+      (a) & 
+      \begin{tabular}{l}
+        Se eu trabalho, então eu recebo remuneração.\\
+        Eu recebo remuneração e eu como feijão.\\
+        Eu não trabalho.\\ \hline
+        Logo, eu não como feijão.
+      \end{tabular}
+    \end{tabular}
+
+    \begin{tabular}{ll}
+      (b) & 
+      \begin{tabular}{l}
+        Se eu estudo e eu trabalho, então eu otimizo o meu tempo.\\
+        Se eu tenho planos para o futuro, então eu estudo e eu trabalho.\\
+        Eu tenho planos para o futuro.\\ \hline
+        Logo, eu trabalho ou eu otimizo o meu tempo.
+      \end{tabular}
+    \end{tabular}
+ 
+
+    \begin{tabular}{ll}
+      (c) & 
+      \begin{tabular}{l}
+        Se eu sou uma ave, então eu bebo água.\\
+        Se eu sou bípede, então eu tenho um bico.\\
+        Eu sou uma ave ou eu tenho um bico.\\ \hline
+        Logo, eu bebo água ou eu sou bípede.
+      \end{tabular}
+    \end{tabular}
+
+    \begin{tabular}{ll}
+      (d) & 
+      \begin{tabular}{l}
+        Seu eu jogo videogame ou eu pratico esporte, então eu não tomo refrigerante.\\
+        Eu jogo videogame.\\
+        Se eu tomo suco, então eu tomo refrigerante.\\ \hline
+        Logo, eu não tomo suco.
+      \end{tabular}
+    \end{tabular}
+
+  \item Dê exemplo de um argumento válido que tenha 4 premissas e monte a sua tabela verdade.
+  
+  \item Dê exemplo de um argumento inválido que tenha 4 premissas e monte a sua tabela verdade.
+ 
+\end{enumerate}
+
+\end{document}

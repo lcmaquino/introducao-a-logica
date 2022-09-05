@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Introdução à Lógica \quad Semestre: 2021/2\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista II}
+\end{center}
+
+\begin{enumerate}
+  \item Construa a tabela verdade das proposições abaixo.
+ 
+    \begin{enumerate}
+      \item $(p \leftrightarrow (\lnot q))\rightarrow((\lnot p) \vee q)$
+      \item $(r \rightarrow (p \wedge (\lnot q)))\vee ((\lnot r) \vee (p \leftrightarrow (\lnot p)))$
+    \end{enumerate}
+
+  \item Considerando que o valor lógico de $p$ e $q$ é verdadeiro e de $r$ é falso, determine o 
+    valor lógico das proposições abaixo.
+
+    \begin{enumerate}
+      \item $(p \wedge (\lnot q))\rightarrow ((\lnot r) \leftrightarrow p)$
+      \item $((\lnot p) \vee (\lnot q)) \,\underline{\vee}\, ((\lnot r)\rightarrow p)$
+      \item $(p \,\underline{\vee}\, (\lnot p))\wedge ((r \leftrightarrow (\lnot q))\wedge ((\lnot p)\rightarrow q)$
+      \item $((\lnot r)\rightarrow q) \wedge (p \vee (r \rightarrow (\lnot p)))$
+    \end{enumerate}
+
+  \item Considerando a proposição condicional ``se eu estudo matemática, então eu sou maluco'', escreva 
+  as suas respectivas proposições:
+
+    \begin{enumerate}
+      \item recíproca;
+      \item contrária;
+      \item contrapositiva;
+      \item negação.
+    \end{enumerate}
+
+  \item Renato, Luiz e Marcelo são casados com Ana, Christiane e Francislene, não necessariamente nesta ordem. 
+    Um dos maridos é professor, outro é engenheiro e outro, empresário. Com base nas dicas abaixo, determine 
+    a profissão de cada um e o nome de sua respectiva esposa.
+    
+  \begin{itemize}
+    \item O empresário é casado com Ana.
+    \item Luiz é professor.
+    \item Christiane não é casada com Luiz.
+    \item Renato não é empresário.
+  \end{itemize}
+
+  \item (Vunesp/TJ-SP - Adaptada) Em um edifício com apartamentos somente nos andares de 1º ao 4º, moram 4 meninas, 
+    em andares distintos: Juliana, Carla, Alice e Maria, não necessariamente nessa ordem. 
+    Cada uma delas tem um animal de estimação diferente: gato, cachorro, passarinho e tartaruga, 
+    não necessariamente nessa ordem. Maria vive reclamando do barulho feito pelo cachorro, 
+    no andar imediatamente acima do seu. Juliana, que não mora no 4º andar, mora um andar acima do de Alice, 
+    que tem o passarinho e não mora no 2º andar. Quem mora no 3º andar tem uma tartaruga. 
+    Determine em qual andar mora cada menina e qual seu respectivo animal de estimação. 
+
+\end{enumerate}
+
+\newpage
+
+\begin{scriptsize}
+\begin{center}
+  \textbf{Gabarito}
+\end{center}
+
+[1]
+ 
+(a)
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+ $p$ & $q$ & $\lnot p$ & $\lnot q$ & $p \leftrightarrow (\lnot q)$ & $(\lnot p) \vee q$ & $(p \leftrightarrow (\lnot q))\rightarrow((\lnot p) \vee q)$ \\ \hline
+V & V & F & F & F & V & V\\ \hline
+V & F & F & V & V & F & F\\ \hline
+F & V & V & F & V & V & V\\ \hline
+F & F & V & V & F & V & V\\ \hline
+\end{tabular}
+
+\vspace{10pt}
+
+(b)
+
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline 
+      $p$ & $q$ & $r$ & $\lnot p$ & $\lnot q$ & $\lnot r$ & $p \wedge (\lnot q)$ & $r\rightarrow (p \wedge (\lnot q))$ & $p \leftrightarrow (\lnot p)$ & $(\lnot r)\vee (p \leftrightarrow (\lnot p))$ & $(r \rightarrow (p \wedge (\lnot q)))\vee ((\lnot r) \vee (p \leftrightarrow (\lnot p)))$\\ \hline
+      V & V & V & F & F & F & F & F & F & F & F\\ \hline
+      V & V & F & F & F & V & F & V & F & V & V\\ \hline
+      V & F & V & F & V & F & V & V & F & F & V\\ \hline
+      V & F & F & F & V & V & V & V & F & V & V\\ \hline
+      F & V & V & V & F & F & F & F & F & F & F\\ \hline
+      F & V & F & V & F & V & F & V & F & V & V\\ \hline
+      F & F & V & V & V & F & F & F & F & F & F\\ \hline
+      F & F & F & V & V & V & F & V & F & V & V\\ \hline
+  \end{tabular}
+
+\vspace{10pt}
+
+[2] 
+
+(a) F. 
+
+(b) V. 
+
+(c) V. 
+
+(d) V.
+
+\vspace{10pt}
+
+[3] 
+
+(a) ``Se eu sou maluco, então eu estudo matemática''.
+
+(b) ``Se eu não estudo matemática, então eu não sou maluco''.
+
+(c) ``Se eu não sou maluco, então eu não estudo matemática''.
+
+(d) ``Eu estudo matemática e eu não sou maluco''.
+
+\vspace{10pt}
+
+[4] Luiz é professor e casado com Francislene. 
+Renato é engenheiro e casado com Christiane. 
+Marcelo é empresário e casado com Ana.
+
+\vspace{10pt}
+
+[5] 
+Alice mora no 1º andar e tem um passarinho. 
+Juliana mora no 2º andar e tem um gato. 
+Maria mora no 3º andar e tem um tartaruga.  
+Carla mora no 4º andar e tem um cachorro. 
+
+\end{scriptsize}
+
+\end{document}
