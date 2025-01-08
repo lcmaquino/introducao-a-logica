@@ -1,0 +1,124 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Introdução à Lógica \quad Semestre: 2022/1\\
+      Prof. Dr. Luiz C. M. de Aquino\\
+      Aluno(a):\rule{6cm}{0.1mm} \quad Data: \rule{0.5cm}{0.1mm}/\rule{0.5cm}{0.1mm}/\rule{1cm}{0.1mm}\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+ \textbf{Avaliação II}
+\end{center}
+
+\textbf{Instruções}
+\begin{itemize}
+ \item Todas as justificativas necessárias na solução de cada questão devem 
+ estar presentes nesta avaliação;
+ \item As respostas finais de cada questão devem estar escritas de caneta;
+ \item Esta avaliação tem um total de 35,0 pontos.
+\end{itemize}
+
+\begin{enumerate}
+  \item \textbf{[8,0 pontos]} Passe cada argumento abaixo para a forma simbólica.
+
+    \begin{tabular}{ll}
+      (a) & 
+      \begin{tabular}{l}
+        Se eu estudo e eu trabalho, então eu otimizo o meu tempo.\\
+        Se eu tenho planos para o futuro, então eu estudo e eu trabalho.\\
+        Eu tenho planos para o futuro.\\ \hline
+        Logo, eu trabalho ou eu otimizo o meu tempo.
+      \end{tabular}
+    \end{tabular}
+ 
+    \vspace{1.5cm}
+
+    \begin{tabular}{ll}
+      (b) & 
+      \begin{tabular}{l}
+        Seu eu jogo videogame ou eu pratico esporte, então eu não tomo refrigerante.\\
+        Eu jogo videogame.\\
+        Se eu tomo suco, então eu tomo refrigerante.\\ \hline
+        Logo, eu não tomo suco.
+      \end{tabular}
+    \end{tabular}
+
+   \vspace{1.5cm}
+
+  \item \textbf{[9,0 pontos]} Complete a tabela verdade para verificar se cada argumento abaixo é válido ou inválido.
+  \begin{enumerate}
+    \item $p\to q,\, r\to \lnot q \vdash r \to \lnot p$
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      $p$ & $q$ & $r$ & $\lnot p$ & $\lnot q$ & 
+      $p \rightarrow q$ & $r \rightarrow (\lnot q)$ & 
+      $r \rightarrow (\lnot p)$\\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+       & & & & & & & \\ \hline
+    \end{tabular}
+  \end{center}
+
+    \item $p\to \lnot q,\, p,\, q\to r \vdash \lnot r$
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      $p$ & $q$ & $r$ & $\lnot q$ & $\lnot r$ & 
+      $p \rightarrow (\lnot q)$ & $q \rightarrow r$ \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+       & & & & & & \\ \hline
+    \end{tabular}
+  \end{center}
+
+  \end{enumerate}
+  
+  \item \textbf{[9,0 pontos]}  Dê exemplo de um argumento válido que tenha 3 premissas 
+  e monte a sua tabela verdade.
+
+   \vspace{7cm}
+   
+  \item \textbf{[9,0 pontos]} Dê exemplo de um argumento inválido que tenha 2 premissas 
+  e monte a sua tabela verdade.
+
+   
+\end{enumerate}
+
+\end{document}
